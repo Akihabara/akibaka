@@ -6,7 +6,7 @@ var templates={
 		defaulttemplate:false,
 		label:"Leave Me Alone",
 		notes:"Remember to name the placeholder fields on metadata and names accordingly: <b>stageX</b> is the current stage name and <b>stageY</b> is the next stage name.",
-		resourcespath:"../",
+		resourcespath:"",
 		metadata:[
 			{ id:"objectname", label:"This stage name.", value:"text", defaultvalue:"stageX", type:"text" },
 			{ id:"nextLevel", label:"Next stage name. Leave empty for game ending.", value:"text", defaultvalue:"stageY", type:"text" }
@@ -68,7 +68,7 @@ var templates={
 		defaulttemplate:true, // If true, is the template selected by default when opening the editor. Handy when working at the same game for long!
 		label:"Sample template", // (Mandatory) Label for the profile.
 		notes:"This is a sample editor template. Check the comments on the sources for further infos", // Notes for this template. Are shown on the template selector.
-		resourcespath:"../", // (Mandatory) The path prefix for searching resources
+		resourcespath:"", // (Mandatory) The path prefix for searching resources
 		metadata:[ // This resource file's metadata. Is a generical set of fields that can be filled with different widgets. Thing's metadata are ever structured in the same way.
 			{
 				id:"textfield", // (Mandatory) The field name
